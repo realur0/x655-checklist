@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1116">
+<title>X655 · Material Checklist</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1116;--panel:#111b22;--panel2:#15222b;--line:#263640;--muted:#9aabb3;--text:#edf5f3;--mint:#79e0bd;--gold:#efc76a;--shadow:0 18px 60px #0005}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% -10%,#19423b77,transparent 32rem),radial-gradient(ellipse at 100% 4%,#33304866,transparent 28rem),var(--bg);color:var(--text);font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}button,input{font:inherit}.page{max-width:1140px;margin:0 auto;padding:44px 28px 60px}.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px}.brand{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:750;color:#c2d2d5}.save-state{font-size:12px;color:var(--mint);display:flex;align-items:center;gap:8px}.save-dot{width:7px;height:7px;background:var(--mint);border-radius:50%;box-shadow:0 0 12px #79e0bd99}.hero{display:grid;grid-template-columns:1fr 290px;gap:30px;align-items:end;margin-bottom:30px}.eyebrow{color:var(--mint);font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(38px,6vw,64px);letter-spacing:-.055em;line-height:.98;margin:14px 0 16px}.intro{color:#b1c0c4;margin:0;max-width:600px;font-size:16px}.recipe-tag{display:inline-flex;align-items:center;gap:8px;background:#1a2c32;border:1px solid #31484b;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;color:#d3e6df;margin-top:20px}.recipe-tag span{color:var(--gold)}.progress-card{background:linear-gradient(145deg,#17262c,#111a20);border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow)}.progress-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}.progress-head strong{font-size:28px;letter-spacing:-.04em}.progress-head span{color:var(--muted);font-size:12px}.track{height:8px;border-radius:99px;background:#26363b;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#5bc49f,#b0f3c4);border-radius:inherit;transition:width .25s ease}.metrics{display:flex;justify-content:space-between;color:#aab9be;font-size:12px;margin-top:11px}.toolbar{display:flex;align-items:center;gap:10px;margin-bottom:16px}.search{flex:1;position:relative}.search input{width:100%;padding:12px 14px 12px 40px;background:#111b22;border:1px solid var(--line);border-radius:12px;color:var(--text);outline:none}.search input:focus{border-color:#5e9e88;box-shadow:0 0 0 3px #79e0bd16}.search:before{content:'⌕';position:absolute;left:14px;top:4px;color:#93a7a9;font-size:25px}.filters{display:flex;gap:6px;padding:4px;background:#111b22;border:1px solid var(--line);border-radius:12px}.filters button,.reset{border:0;color:#aebdc0;background:transparent;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700}.filters button.active{background:#253b3a;color:#aef1d4}.reset{border:1px solid var(--line);background:#111b22}.reset:hover,.filters button:hover{color:#fff}.section-head{display:flex;justify-content:space-between;align-items:center;margin:24px 2px 12px}.section-head h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#d1dddc;margin:0}.section-head span{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.item{display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center;min-height:86px;padding:12px;background:linear-gradient(135deg,#142129,#11191f);border:1px solid #263740;border-radius:15px;transition:border-color .2s,background .2s,transform .2s}.item:hover{border-color:#49665f;transform:translateY(-1px)}.item.done{background:linear-gradient(135deg,#142a26,#111b20);border-color:#31594d}.icon{width:58px;height:58px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 7px 8px #0007)}.item-name{font-weight:700;font-size:14px;line-height:1.25}.item-meta{font-size:11px;color:#9aabb3;margin-top:5px}.item.done .item-name{text-decoration:line-through;color:#9db9ad}.qty{font-variant-numeric:tabular-nums;color:#dbe7dd;font-size:12px;font-weight:750;background:#21302f;border:1px solid #354946;border-radius:8px;padding:6px 8px;white-space:nowrap}.check{display:flex;align-items:center;justify-content:center;grid-column:3;grid-row:1;width:23px;height:23px;border:1px solid #52646a;border-radius:7px;background:#11191f;color:#0b1714;cursor:pointer;transition:all .15s}.check:hover{border-color:var(--mint)}.check[aria-pressed=true]{background:var(--mint);border-color:var(--mint)}.check svg{width:15px;height:15px;opacity:0;transform:scale(.7);transition:.15s}.check[aria-pressed=true] svg{opacity:1;transform:scale(1)}.empty{grid-column:1/-1;padding:40px;text-align:center;color:var(--muted);border:1px dashed #35464d;border-radius:14px}.foot{margin-top:24px;display:flex;justify-content:space-between;gap:16px;color:#778b91;font-size:11px}.foot strong{color:#a5b7b8;font-weight:600}@media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.page{padding:26px 15px 38px}.topline{margin-bottom:24px}.hero{gap:22px}.toolbar{flex-wrap:wrap}.search{flex-basis:100%}.filters{flex:1}.filters button{flex:1}.reset{height:39px}.grid{grid-template-columns:1fr}.item{min-height:78px}.foot{flex-direction:column}.brand{font-size:10px}}
+.item{grid-template-columns:58px minmax(0,1fr);grid-template-rows:auto auto;align-items:center}.icon{grid-column:1;grid-row:1/3}.item-main{grid-column:2;grid-row:1;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;min-width:0}.item-copy{min-width:0}.item-name{font-weight:700;font-size:14px;line-height:1.25}.item-meta{font-size:11px;color:#9aabb3;margin-top:5px}.item.done .item-name{text-decoration:line-through;color:#9db9ad}.item.done .item-meta{color:#a4d5c1}.check{flex:none;width:23px;height:23px;border:1px solid #52646a;border-radius:7px;background:#11191f;color:#0b1714;cursor:pointer;display:flex;align-items:center;justify-content:center}.check[aria-pressed=true]{background:var(--mint);border-color:var(--mint)}.check svg{width:15px;height:15px;opacity:0;transform:scale(.7);transition:.15s}.check[aria-pressed=true] svg{opacity:1;transform:scale(1)}.amount-row{grid-column:2;grid-row:2;display:flex;align-items:center;gap:7px;margin-top:8px;font-size:11px;color:#aab9be}.amount-row label{display:flex;align-items:center;gap:6px}.amount-row input{width:66px;padding:6px 7px;background:#0d151a;border:1px solid #35484d;border-radius:7px;color:#f2faf5;text-align:right;font-variant-numeric:tabular-nums;outline:none}.amount-row input:focus{border-color:var(--mint);box-shadow:0 0 0 2px #79e0bd19}.amount-sep{color:#71858a}.amount-unit{font-size:10px;color:#81969a}.item-meta strong{font-weight:700;color:#d0ddda}.item.done .item-meta strong{color:#a4d5c1}.grid{display:flex;flex-direction:column;gap:9px}.tree-node{min-width:0}.ingredients{margin:8px 0 0 17px;border-left:1px solid #344b4d;padding-left:11px}.ingredients summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;color:#9db7b1;font-size:11px;font-weight:700;padding:5px 0;user-select:none}.ingredients summary::-webkit-details-marker{display:none}.ingredients summary:before{content:"›";font-size:18px;line-height:12px;transition:transform .15s;color:var(--mint)}.ingredients[open]>summary:before{transform:rotate(90deg)}.branch{display:flex;flex-direction:column;gap:8px;margin-top:4px}.ingredients>.branch{padding-left:3px}.context-only>.item{display:none}.empty{grid-column:auto}.item{transition:border-color .2s,background .2s}</style></head>
+<body><main class="page">
+<div class="topline"><div class="brand">SkyBlock · Crafting Tracker</div><div class="save-state"><i class="save-dot"></i><span id="save-label">Saved on this device</span></div></div>
+<header class="hero"><div><div class="eyebrow">Materials checklist</div><h1>X655<br>Material List</h1><p class="intro">Single-ingredient recipes convert in either direction. For recipes with several ingredients, setting the finished item fills its ingredients downward; entering ingredients calculates finished items only when every ingredient covers a full craft. Your amounts save automatically.</p><div class="recipe-tag"><span>1 × X555</span> · Crafting requirements</div></div><section class="progress-card" aria-label="Checklist progress"><div class="progress-head"><strong id="progress-count">0 / 23</strong><span>materials complete</span></div><div class="track"><div class="fill" id="progress-fill"></div></div><div class="metrics"><span id="percent">0% gathered</span><span id="remaining">23 materials left</span></div></section></header>
+<div class="toolbar"><label class="search"><input id="search" type="search" placeholder="Find a material…" aria-label="Search materials"></label><div class="filters" role="group" aria-label="Filter items"><button class="active" data-filter="all">All</button><button data-filter="needed">Needed</button><button data-filter="done">Done</button></div><button class="reset" id="reset">Reset</button></div>
+<div class="section-head"><h2>Required materials</h2><span id="shown-count">23 entries</span></div><div id="items" class="grid" aria-live="polite"></div>
+<footer class="foot"><span><strong>Autosave is on.</strong> Progress is stored in this browser.</span><span>Texture references: FurSky Reborn</span></footer>
+</main>
+<script>
+const materials=[
+{qty:1,name:"Flawless Ruby Gemstone",image:"flawless-ruby.png"},
+{qty:30,name:"Corleonite",image:"corleonite.png",start:1},
+{qty:5,name:"Refined Diamonds",image:"refined-diamond.png",start:4},
+{qty:10,name:"Enchanted Diamond Blocks",image:"enchanted-diamond-block.svg",parent:2,ratio:2},
+{qty:32,name:"Refined Titanium",image:"refined-titanium.png"},
+{qty:512,name:"Enchanted Titanium",image:"titanium-base.png",parent:4,ratio:16},
+{qty:16,name:"Gemstone Mixture",image:"gemstone-mixture.png"},
+{qty:64,name:"Fine Jade",image:"fine-jade.png",parent:6,ratio:4},
+{qty:64,name:"Fine Amber",image:"fine-amber.png",parent:6,ratio:4},
+{qty:64,name:"Fine Sapphire",image:"fine-sapphire.png",parent:6,ratio:4},
+{qty:64,name:"Fine Amethyst",image:"fine-amethyst.png",parent:6,ratio:4},
+{qty:5120,name:"Sludge Juice",image:"sludge-juice.png",parent:6,ratio:320},
+{qty:10,name:"Mithril Plates",image:"mithril-plate.png"},
+{qty:10,name:"Refined Titanium",image:"refined-titanium.png",parent:12,ratio:1},
+{qty:160,name:"Enchanted Titanium",image:"titanium-base.png",parent:13,ratio:16},
+{qty:50,name:"Refined Mithril",image:"refined-mithril.png",parent:12,ratio:5},
+{qty:8000,name:"Enchanted Mithril",image:"mithril-base.png",parent:15,ratio:160},
+{qty:10,name:"Enchanted Iron Blocks",image:"enchanted-iron-block.svg",parent:12,ratio:1},
+{qty:10,name:"Golden Plates",image:"golden-plate.png",parent:12,ratio:1},
+{qty:10,name:"Refined Diamonds",image:"refined-diamond.png",parent:18,ratio:1},
+{qty:20,name:"Enchanted Diamond Blocks",image:"enchanted-diamond-block.svg",parent:19,ratio:2},
+{qty:20,name:"Enchanted Gold Blocks",image:"enchanted-gold-block.svg",parent:18,ratio:2},
+{qty:50,name:"Glacite Jewels",image:"glacite-jewel.png",parent:18,ratio:5}
+];
+const key="x655-material-progress-v2";
+let amounts=loadAmounts(),filter="all",query="";
+function loadAmounts(){
+try{
+const raw=localStorage.getItem(key);
+if(raw){const parsed=JSON.parse(raw);const result=parsed&&typeof parsed==="object"?parsed:{};materials.forEach((m,i)=>{if(result[i]===undefined&&m.start!==undefined)result[i]=m.start});return result}
+const old=JSON.parse(localStorage.getItem("x655-material-checklist-v1")||"{}"),result={};
+materials.forEach((m,i)=>{if(m.start!==undefined)result[i]=m.start;if(old[i]===true)result[i]=m.qty});
+return result;
+}catch{return {}}
+}
+function persist(){try{localStorage.setItem(key,JSON.stringify(amounts));document.getElementById("save-label").textContent="Saved on this device"}catch{document.getElementById("save-label").textContent="Save unavailable in this browser"}}
+function current(i){const n=Number(amounts[i]||0);return Number.isFinite(n)?Math.max(0,Math.min(materials[i].qty,Math.floor(n))):0}
+function syncFrom(index){const source=index;function descend(parent){const parentAmount=current(parent);materials.forEach((m,j)=>{if(m.parent!==parent)return;if(j!==source)amounts[j]=Math.floor(parentAmount*(m.ratio||1));descend(j)})}descend(source);let node=source;while(materials[node].parent!==undefined){const parent=materials[node].parent,children=materials.map((m,j)=>({m,j})).filter(x=>x.m.parent===parent);if(children.length===1){amounts[parent]=Math.floor(current(node)/(materials[node].ratio||1))}else{const possible=children.map(x=>Math.floor(current(x.j)/(x.m.ratio||1)));amounts[parent]=Math.min(...possible)}node=parent}}
+function updateProgress(){
+let complete=0,totalRatio=0;materials.forEach((m,i)=>{const n=current(i);if(n>=m.qty)complete++;totalRatio+=n/m.qty});
+const pct=Math.round(totalRatio/materials.length*100);
+document.getElementById("progress-count").textContent=complete+" / "+materials.length;
+document.getElementById("progress-fill").style.width=pct+"%";
+document.getElementById("percent").textContent=pct+"% gathered";
+document.getElementById("remaining").textContent=(materials.length-complete)+" materials left";
+}
+function matches(item,i){const n=current(i),done=n>=item.qty;return(filter!=="done"||done)&&(filter!=="needed"||!done)&&(!query||item.name.toLowerCase().includes(query))}
+function makeCard(item,i){
+const have=current(i),done=have>=item.qty,card=document.createElement("article"),ratioLabel=item.parent!==undefined?" · ×"+item.ratio+" per "+materials[item.parent].name:"";
+card.className="item"+(done?" done":"");
+card.innerHTML='<img class="icon" src="images/'+item.image+'" alt="" loading="lazy"><div class="item-main"><div class="item-copy"><div class="item-name"></div><div class="item-meta">Required: <strong>× '+item.qty.toLocaleString("en-US")+'</strong>'+ratioLabel+'</div></div><button class="check" aria-label="Mark item '+(i+1)+' '+(done?"needed":"complete")+'" aria-pressed="'+done+'"><svg viewBox="0 0 20 20" fill="none"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><div class="amount-row"><label>Have <input type="number" min="0" max="'+item.qty+'" step="1" inputmode="numeric" aria-label="How many '+item.name+' do you have?" value="'+have+'"></label><span class="amount-sep">/ '+item.qty.toLocaleString("en-US")+'</span><span class="amount-unit">'+item.name+'</span></div>';
+card.querySelector(".item-name").textContent=item.name;
+const input=card.querySelector("input");input.dataset.index=String(i);
+input.addEventListener("input",()=>{let n=input.value===""?0:Number(input.value);if(Number.isFinite(n)){amounts[i]=Math.max(0,Math.min(item.qty,Math.floor(n)));syncFrom(i);persist();document.querySelectorAll(".amount-row input[data-index]").forEach(other=>{const j=Number(other.dataset.index),isDone=current(j)>=materials[j].qty;if(j!==i)other.value=String(current(j));const row=other.closest(".item");row.classList.toggle("done",isDone);const b=row.querySelector(".check");b.setAttribute("aria-pressed",String(isDone));b.setAttribute("aria-label","Mark item "+(j+1)+" "+(isDone?"needed":"complete"))});updateProgress()}});
+input.addEventListener("change",()=>{input.value=String(current(i));syncFrom(i);persist();render()});
+card.querySelector(".check").addEventListener("click",()=>{amounts[i]=done?0:item.qty;syncFrom(i);persist();render()});
+return card;
+}
+function makeNode(item,i,shown){
+const children=materials.map((m,j)=>({m,j})).filter(x=>x.m.parent===i);
+const childNodes=children.map(x=>makeNode(x.m,x.j,shown)).filter(Boolean);
+const rowMatches=matches(item,i);
+if(!rowMatches&&!childNodes.length)return null;
+const node=document.createElement("div");node.className="tree-node"+(!rowMatches?" context-only":"");
+if(rowMatches){shown.count++;node.append(makeCard(item,i))}
+if(childNodes.length){const details=document.createElement("details");details.className="ingredients";details.open=true;const summary=document.createElement("summary");summary.textContent="Ingredients to craft "+item.name;details.append(summary);const branch=document.createElement("div");branch.className="branch";childNodes.forEach(el=>branch.append(el));details.append(branch);node.append(details)}
+return node;
+}
+function render(){
+const root=document.getElementById("items");root.innerHTML="";const shown={count:0};
+materials.forEach((m,i)=>{if(m.parent!==undefined)return;const node=makeNode(m,i,shown);if(node)root.append(node)});
+if(!shown.count)root.innerHTML='<div class="empty">No materials match this view.</div>';
+document.getElementById("shown-count").textContent=shown.count+" "+(shown.count===1?"entry":"entries");
+updateProgress();
+}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{document.querySelector(".filters button.active").classList.remove("active");b.classList.add("active");filter=b.dataset.filter;render()}));
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render()});
+document.getElementById("reset").addEventListener("click",()=>{if(Object.keys(amounts).some(i=>current(Number(i))>0)&&confirm("Clear all saved amounts?")){amounts=Object.fromEntries(materials.map((_,i)=>[i,0]));persist();render()}});
+render();
+</script></body></html>
+
+
+
+
+
+
+
+
